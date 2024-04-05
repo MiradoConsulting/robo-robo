@@ -32,7 +32,14 @@ public class Rocz extends Robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
 		// Replace the next line with any behavior you would like
-		fire(1);
+        // Check if the enemy robot is close
+        if (event.getDistance() < 200) {
+            // Aim gun at the enemy robot
+            turnGunRight(getHeading() - getGunHeading() + event.getBearing());
+
+            // Fire at the enemy robot
+            fire(3);
+        }
 	}
 
 	/**
