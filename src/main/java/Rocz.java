@@ -14,9 +14,11 @@ public class Rocz extends Robot
 	 */
     public void run() {
         // Set the robot's initial heading to move towards the top of the battlefield
-		setColors(Color.pink, Color.black, Color.black);
-
-        setTurnLeft(getHeading());
+		setBodyColor(Color.black);
+		setGunColor(Color.black);
+		setRadarColor(Color.orange);
+		setBulletColor(Color.cyan);
+		setScanColor(Color.cyan);
 
         // Move to the top-left corner of the battlefield
         while (true) {
