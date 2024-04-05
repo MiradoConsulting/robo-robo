@@ -1,5 +1,5 @@
 import robocode.*;
-//import java.awt.Color;
+import java.awt.Color;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
 
@@ -32,7 +32,7 @@ public class Rocz extends Robot
 	/**
 	 * onScannedRobot: What to do when you see another robot
 	 */
-	public void onScannedRobot(ScannedRobotEvent e) {
+	public void onScannedRobot(ScannedRobotEvent event) {
 		// Replace the next line with any behavior you would like
         // Check if the enemy robot is close
         if (event.getDistance() < 200) {
